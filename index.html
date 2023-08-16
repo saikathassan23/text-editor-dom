@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My text editor</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main>
+        <section class="w-10/12 bg-sky-500 mx-auto rounded-sm mt-5 p-5">
+            <h1 class="text-3xl text-center">
+                My Text Editor
+            </h1>
+            <div class="w-3/4 bg-sky-200 mx-auto border border-black mt-3 p-4">
+                <div class="flex items-center justify-between flex-wrap">
+                    <div class="flex-1 flex gap-5 ">
+                        <p id="text-bold" class="text-2xl font-bold cursor-pointer">B</p>
+                        <p id="text-italic" class="text-2xl font-bold cursor-pointer"><i>I</i> </p>
+                        <p id="text-underline" class="text-2xl font-bold cursor-pointer"><u>U</u></p>
+                    </div>
+                    <div class="flex-1 text-2xl  gap-5 flex justify-center">
+                        <i id="align-left" class="fa-solid fa-align-left cursor-pointer"></i>
+                        <i id="align-center" class="fa-solid fa-align-center cursor-pointer"></i>
+                        <i id="align-right" class="fa-solid fa-align-right cursor-pointer"></i>
+                        <i id="align-justify" class="fa-solid fa-align-justify cursor-pointer"></i>
+                    </div>
+                    <div class="flex-1 gap-5  flex justify-end items-center text-2xl">
+                        <input type="number" name="" id="number-input" class="w-[50px] text-lg bg-transparent"
+                            value="16">
+                        <i id="text-capitalize" class="fa-solid fa-a cursor-pointer"></i>
+                        <input  type="color" name="color" id="color-input">
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <textarea id="text-field" placeholder="Enter your message"
+                    class="textarea textarea-bordered textarea-lg w-full min-h-[200px] "></textarea>
+            </div>
+        </section>
+        <section>
+            <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi ratione quidem ipsum ipsam, blanditiis atque ullam modi libero quae nam praesentium voluptatum! Deserunt impedit optio distinctio eaque eos perspiciatis sed modi? Ullam maiores amet placeat, laborum distinctio officia iusto aperiam? Reprehenderit sunt nulla voluptate aut ullam, sit quis eum doloremque iste culpa. Delectus labore modi corporis porro earum accusantium facere laudantium cupiditate molestias! Voluptatibus eligendi doloribus reprehenderit aliquam, sint ipsa facere explicabo quod deserunt molestias exercitationem soluta in eius. Nihil sed quod ratione deserunt repellendus recusandae quaerat eligendi, sequi soluta ad rem vitae obcaecati illo dolorum neque fugit accusamus molestias provident tempora doloremque impedit! Unde amet officiis sed nisi, nesciunt, sapiente mollitia alias modi repellat iusto voluptates iure? Et distinctio iusto repellendus inventore quisquam voluptatibus nulla earum dolores magni. Rem corrupti dolore non harum unde, soluta, aperiam perferendis, ea temporibus iste sint. Quaerat incidunt soluta minima cum libero quisquam neque reprehenderit corrupti architecto corporis ducimus repellendus facere earum perferendis iusto saepe tenetur, dicta sapiente est, a mollitia? Et adipisci sit explicabo exercitationem, vel quis deleniti voluptates facilis dolore voluptatem magni quos facere assumenda ipsum dolor cumque dicta tenetur numquam at. Esse minima hic numquam. Cupiditate exercitationem necessitatibus quas delectus ut! -->
+        </section>
+    </main>
+    <script src="./editor.js"></script>
+</body>
+
+</html>
